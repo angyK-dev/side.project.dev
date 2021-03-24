@@ -1,0 +1,82 @@
+* {
+	--bleu-cobalt: #22427c;
+	--orange: #d5ae21;
+	--orange-fluo: #ff7f00;
+	--bleu-clair: #090a0a;
+	--vert: #096a09;
+	--vert-clair: #34c924;
+	--orange-clair: #dd7b40;
+}
+
+.nova-about {
+	line-height: 2;
+}
+
+.novatic {
+	font-weight: bold;
+	color: var(--orange-fluo);
+}
+
+ul.nova-list {
+	text-align: left !important;
+	padding-left: 5rem;
+}
+
+ul.nova-list li {
+	font-weight: bolder;
+	list-style: none;
+	position: relative;
+	padding: 0 0 0 20px;
+}
+
+li.event::before {
+	content: "🎉";
+	/* position: absolute;
+	left: 0;
+	top: 5px;
+	width: 10px;
+	height: 10px;
+	background: var(--orange-clair); */
+}
+
+li.house::before {
+	content: "🏘";
+}
+
+li.export::before {
+	content: "🔄";
+}
+
+.card-text {
+	font-size: 0.8rem;
+}
+
+.card img {
+	height: 40%;
+}
+
+.question {
+	color: var(--orange-fluo);
+	position: absolute;
+	right: 20%;
+	z-index: -2;
+	opacity: 0.2;
+	rotate: 10deg;
+}
+
+.question i {
+	font-size: 20rem;
+}
+
+.img-hover-zoom {
+	/* height: 300px; [1.1] Set it as per your need */
+	overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+.img-hover-zoom img {
+	transition: transform 0.8s ease-in-out;
+}
+
+.img-hover-zoom:hover img {
+	transform: scale(1.2);
+}
